@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #0b0b0b;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #b58944;
+  margin: 0;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+figure {
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+figure img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* Navigation buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.backstory {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #111;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.backstory h2 {
+  color: #b58944;
+  margin-bottom: 1rem;
+}
+
+.back-btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.8rem 2rem;
+  background: #b58944;
+  color: #0b0b0b;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  figure img {
+    height: 250px;
+  }
+}
+
+footer {
+  background-color: #0b0b0b;
+  color: #e8e8e8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid #1a1a1a; 
+}
+
+footer p {
+  margin: 0;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.85rem;
+    padding: 15px;
+  }
+}

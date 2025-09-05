@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio - Daniel Whitmore</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: "Lato", sans-serif;
+        background-color: #0f0f0f;
+        color: #eaeaea;
+      }
+
+      header {
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      header h1 {
+        font-size: 2rem;
+        font-family: "Playfair Display", serif;
+        color: #b58944;
+        margin: 0;
+      }
+
+      .filter-bar {
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .filter-bar label {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+        color: #eaeaea;
+      }
+
+      select {
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+        border: none;
+        background: #b58944;
+        color: #0b0b0b;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* ====== Proper CSS GRID ====== */
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 per row on desktop */
+        gap: 2.5rem;
+        max-width: 1200px;
+        margin: 0 auto 4rem;
+        padding: 0 2rem;
+      }
+
+      /* Make the GRID ITEM the card (anchor) */
+      .portfolio-item {
+        display: flex; /* card layout */
+        flex-direction: column;
+        background-color: #0f0f0f;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        text-decoration: none; /* anchor reset */
+        color: inherit;
+      }
+
+      .portfolio-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+      }
+
+      /* Hide filtered items by removing them from layout */
+      .portfolio-item.hidden {
+        display: none !important;
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .portfolio-content {
+        padding: 1rem;
+        text-align: left;
+      }
+
+      .portfolio-content h3 {
+        font-size: 1.3rem;
+        color: #b58944;
+        margin: 0 0 0.5rem;
+      }
+
+      .portfolio-content p {
+        font-size: 1rem;
+        color: #e8e8e8;
+        margin: 0;
+      }
+
+      footer {
+        background-color: #0b0b0b; /* Charcoal Black */
+        color: #e8e8e8; /* Soft Gray */
+        text-align: center;
+        padding: 20px;
+        font-size: 0.95rem;
+        border-top: 1px solid #1a1a1a; /* Subtle separator */
+      }
+
+      footer p {
+        margin: 0;
+        color: #ffffff; /* White text */
+      }
+
+      /* ====== Responsive ====== */
+      @media (max-width: 992px) {
+        .portfolio-grid {
+          grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+        }
+      }
+
+      @media (max-width: 600px) {
+        .portfolio-grid {
+          grid-template-columns: 1fr; /* 1 per row on mobile */
+        }
+        header h1 {
+          font-size: 1.6rem;
+        }
+        .portfolio-item img {
+          height: 180px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        footer {
+          font-size: 0.85rem;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>My Portfolio</h1>
+      </header>
+
+      <!-- Filter Dropdown -->
+      <div class="filter-bar">
+        <label for="category">Filter by Category:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="africa">African Safaris</option>
+          <option value="ocean">Ocean Life</option>
+          <option value="birds">Birds in Flight</option>
+          <option value="rainforest">Rainforest Secrets</option>
+        </select>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Make the ANCHOR the grid item & give it the category class -->
+        <a href="savannah.html" class="portfolio-item africa">
+          <img src="assets/lions-1.webp" alt="African Safaris" />
+          <div class="portfolio-content">
+            <h3>Shadows of the Savannah</h3>
+            <p>
+              A powerful glimpse into lion pride dynamics across the African
+              plains.
+            </p>
+          </div>
+        </a>
+
+        <a href="ocean.html" class="portfolio-item ocean">
+          <img src="assets/oceans-1.jpg" alt="Ocean Life" />
+          <div class="portfolio-content">
+            <h3>Beneath the Blue</h3>
+            <p>A dive into vibrant coral reefs and ocean biodiversity.</p>
+          </div>
+        </a>
+
+        <a href="birds.html" class="portfolio-item birds">
+          <img src="assets/bird-1.jpg" alt="Birds in Flight" />
+          <div class="portfolio-content">
+            <h3>Flight of the Eagles</h3>
+            <p>Graceful migrations of eagles captured mid-air.</p>
+          </div>
+        </a>
+
+        <a href="rainforest.html" class="portfolio-item rainforest">
+          <img src="assets/tropical-1.jpg" alt="Rainforest Secrets" />
+          <div class="portfolio-content">
+            <h3>Whispers of the Rainforest</h3>
+            <p>
+              Mysteries of rainforest wildlife, hidden under dense canopy
+              layers.
+            </p>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Daniel Whitmore. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const filterSelect = document.getElementById("category");
+      const cards = document.querySelectorAll(".portfolio-item"); // anchors are the grid items
+
+      filterSelect.addEventListener("change", () => {
+        const value = filterSelect.value;
+        cards.forEach((card) => {
+          const match = value === "all" || card.classList.contains(value);
+          card.classList.toggle("hidden", !match); // hide/show the GRID ITEM itself
+        });
+      });
+    </script>
+  </body>
+</html>

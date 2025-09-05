@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wildlife Photographer - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- HOME -->
+      <div class="home">
+        <!-- HERO SECTION -->
+        <section class="hero">
+          <div class="slider">
+            <div
+              class="slide active"
+              style="background-image: url('assets/lions-1.webp')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('assets/oceans-1.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('assets/bird-1.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('assets/tropical-1.jpg')"
+            ></div>
+          </div>
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+            <h1>Capturing the Wild Before It’s Gone</h1>
+            <p>
+              Wildlife Photography & Conservation Stories by Daniel Whitmore
+            </p>
+            <div class="hero-buttons">
+              <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+              <a href="#about" class="btn btn-secondary">About Me</a>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <div class="nav-arrows">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+          </div>
+
+          <!-- Dots -->
+          <div class="dots"></div>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section class="featured-projects" id="projects">
+          <h2>Featured Projects</h2>
+          <div class="project-grid">
+            <a
+              href="project-savannah.html"
+              class="project-card"
+              style="background-image: url('assets/lions-1.webp')"
+            >
+              <div class="overlay-text">Shadows of the Savannah</div>
+            </a>
+
+            <a
+              href="project-blue.html"
+              class="project-card"
+              style="background-image: url('assets/oceans-1.jpg')"
+            >
+              <div class="overlay-text">Beneath the Blue</div>
+            </a>
+
+            <a
+              href="project-eagles.html"
+              class="project-card"
+              style="background-image: url('assets/bird-1.jpg')"
+            >
+              <div class="overlay-text">Flight of the Eagles</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- -------------INSTAGRAM FEED------------ -->
+        <section class="instagram-feed" id="instagram">
+          <h2>From the Field</h2>
+          <div class="insta-grid">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="insta-post"
+            >
+              <img src="assets/lions-1.webp" alt="Instagram Post 1" />
+              <div class="insta-overlay"><span>Instagram</span></div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="insta-post"
+            >
+              <img src="assets/bird-1.jpg" alt="Instagram Post 2" />
+              <div class="insta-overlay"><span>Instagram</span></div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="insta-post"
+            >
+              <img src="assets/oceans-1.jpg" alt="Instagram Post 3" />
+              <div class="insta-overlay"><span>Instagram</span></div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="insta-post"
+            >
+              <img src="assets/tropical-1.jpg" alt="Instagram Post 4" />
+              <div class="insta-overlay"><span>Instagram</span></div>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- ABOUT ME (Home Page) -->
+      <div class="about-me">
+        <section class="about-home" id="about">
+          <div class="about-container">
+            <div class="about-image">
+              <img
+                src="assets/Daniel.png"
+                alt="Daniel Whitmore - Wildlife Photographer"
+              />
+            </div>
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p>
+                Hi, I’m Daniel Whitmore — a wildlife photographer and
+                conservationist dedicated to capturing the raw beauty of nature.
+                My lens tells stories of endangered species, untamed landscapes,
+                and the fragile balance of our planet. Through photography, I
+                aim to inspire awareness, compassion, and action for wildlife
+                conservation.
+              </p>
+              <a href="about.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ================= Portfolio Section ================= -->
+      <section class="portfolio-section" id="portfolio">
+        <h2 class="portfolio-heading">My Portfolio</h2>
+        <p class="portfolio-subheading">
+          A glimpse into my recent projects and fieldwork.
+        </p>
+
+        <div class="portfolio-container">
+          <!-- Project 1 -->
+          <a href="savannah.html">
+            <div class="portfolio-item">
+              <img src="assets/lions-1.webp" alt="Project 1" />
+              <div class="portfolio-content">
+                <h3>Shadows of the Savannah</h3>
+                <p>Lion pride at sunrise</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="ocean.html">
+            <div class="portfolio-item">
+              <img src="assets/oceans-1.jpg" alt="Project 2" />
+              <div class="portfolio-content">
+                <h3>Beneath the Blue</h3>
+                <p>Sea turtle swimming over coral reef</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 3 -->
+          <a href="birds.html">
+            <div class="portfolio-item">
+              <img src="assets/bird-1.jpg" alt="Project 3" />
+              <div class="portfolio-content">
+                <h3>Flight of the Eagles</h3>
+                <p>Golden eagle soaring in mountain skies</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 4 -->
+          <a href="rainforest.html">
+            <div class="portfolio-item">
+              <img src="assets/tropical-1.jpg" alt="Project 4" />
+              <div class="portfolio-content">
+                <h3>Rainforest Secrets</h3>
+                <p>Colorful tree frog on a leaf</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="see-more">
+          <a href="portfolio.html" class="see-more-btn">See More</a>
+        </div>
+      </section>
+
+      <!-- ------------Blog------------- -->
+
+      <!-- Blog Section -->
+      <!-- Blog Section -->
+      <section class="blog">
+        <h2 class="section-title">Blog</h2>
+        <div class="blog-list">
+          <!-- Blog Post 1 -->
+          <article class="blog-post">
+            <img
+              src="assets/blog-1.jpg"
+              alt="The Gear I Use for Wildlife Photography"
+            />
+            <div class="blog-content">
+              <h3>The Gear I Use for Wildlife Photography</h3>
+              <p>
+                A breakdown of my essential camera gear, lenses, and accessories
+                that help me capture wildlife moments with precision and
+                clarity.
+              </p>
+              <a class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Blog Post 2 -->
+          <article class="blog-post">
+            <img
+              src="assets/blog-2.webp"
+              alt="Behind the Lens: Tracking the Elusive Snow Leopard"
+            />
+            <div class="blog-content">
+              <h3>Behind the Lens: Tracking the Elusive Snow Leopard</h3>
+              <p>
+                Journey into the high Himalayas as I share the story of chasing
+                one of the world’s rarest and most elusive big cats.
+              </p>
+              <a class="read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ------------ Contact ------------- -->
+
+      <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-container">
+          <!-- Left side: Info -->
+          <div class="contact-left">
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <p>
+                If you have any questions or want to collaborate, feel free to
+                reach out. We’d love to hear from you!
+              </p>
+              <ul>
+                <li>Email: daniel.whitmorewild@gmai.com</li>
+                <li>Phone: 0123456789</li>
+                <li>Location: XYZ Country</li>
+              </ul>
+            </div>
+            <div class="contact-social">
+              <h3>Connect With Us</h3>
+              <div class="social-icons">
+                <a><i class="fab fa-facebook-f"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-instagram"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side: Form -->
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Daniel Whitmore. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
